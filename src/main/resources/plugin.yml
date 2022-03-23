@@ -1,9 +1,9 @@
 name: MySQLNicks
-version: ${project.version}
+version: "1.0.8"
 main: co.ignitus.mysqlnicks.MySQLNicks
 api-version: "1.13"
 softdepend: [PlaceholderAPI, Essentials, CMI]
-authors: ["Ignitus Co"]
+authors: ["Ignitus Co", "edits by RM"]
 description: Share nicknames across servers with mysql
 website: https://ignitus.co
 

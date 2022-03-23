@@ -3,6 +3,7 @@ package co.ignitus.mysqlnicks;
 import co.ignitus.mysqlnicks.commands.ExportCMD;
 import co.ignitus.mysqlnicks.commands.ImportCMD;
 import co.ignitus.mysqlnicks.commands.NickCMD;
+import co.ignitus.mysqlnicks.commands.RealnameCMD;
 import co.ignitus.mysqlnicks.util.DataUtil;
 import co.ignitus.mysqlnicks.util.PlaceholderUtil;
 import lombok.Getter;
@@ -61,6 +62,7 @@ public final class MySQLNicks extends JavaPlugin {
         getCommand("nick").setExecutor(new NickCMD());
         getCommand("importnicks").setExecutor(new ImportCMD());
         getCommand("exportnicks").setExecutor(new ExportCMD());
+        getCommand("realname").setExecutor(new RealnameCMD());
     }
 
     @Override
