@@ -15,6 +15,9 @@ commands:
     description: Import nicknames from a supported plugin
   exportnicks:
     description: Export nicknames to a supported plugin
+  realname:
+    description: Get users real name
+    aliases: [whoami]
 
 permissions:
   mysqlnicks.staff:

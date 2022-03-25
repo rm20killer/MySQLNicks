@@ -153,4 +153,18 @@ public class DataUtil {
         }
         return nicknames;
     }
+    /**
+     * attempts to get the UUID of a player by their nickname
+     */
+    public static UUID getUUID(String nickname) {
+        try (Connection connection = getDataSource().getConnection()) {
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM `mysqlnicks` WHERE `nickname` = ?");
+            statement.setString(1, nickname);
+            ResultSet result = statement.executeQuery();
+            if (result.next())
+                return UUID.fromString(result.getString("uuid"));
+        } catch (SQLException ignored) {
+        }
+        return null;
+    }
 }

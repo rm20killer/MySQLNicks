@@ -32,6 +32,8 @@ messages:
     error: "&4An error occurred while trying to set your nickname."
     set: "&aSuccessfully set your nickname to &e%nickname%"
     unset: "&aSuccessfully remove your nickname."
+    realname-success: "There real name is &e%player%"
+    realname-failure: "&4That user it not nicked"
     staff:
       error: "&4An error occurred while trying to set &e%player%&4's nickname."
       set: "&aSuccessfully set &e%player%&a's nickname to &e%nickname%"
