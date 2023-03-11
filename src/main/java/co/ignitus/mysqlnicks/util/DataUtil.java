@@ -32,6 +32,8 @@ public class DataUtil {
         final int port = config.getInt("mysql.port", 3306);
         final String database = config.getString("mysql.database", "");
         final String url = "jdbc:mysql://" + host + ":" + port + "/" + database;
+        dataSource.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
+
         dataSource.setJdbcUrl(url);
         dataSource.setUsername(config.getString("mysql.username", ""));
         dataSource.setPassword(config.getString("mysql.password", ""));
